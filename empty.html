@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,32 @@
             width: 200px;
             margin-top: 40px;
             margin-left: 180px;
+            animation-duration: 15s;
+            animation-name: css;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-delay: 1ms;
+        }
+
+        @keyframes css {
+            from {
+                margin-left: 25%;
+                width: 50%;
+                transform: rotateY(360deg);
+            }
+
+            to {
+                margin-left: 25%;
+                width: 50%;
+                transform: rotateY(-360deg);
+            }
+
         }
     </style>
 </head>
+
 <body>
-    <img src="HTML5-CSS3.jpg" alt="">
+    <img src="HTML5-CSS3.jpg" alt="image">
 </body>
+
 </html>
